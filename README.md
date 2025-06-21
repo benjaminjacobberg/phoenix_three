@@ -1,5 +1,8 @@
 # Phoenix Three
 
+[![Hex.pm](https://img.shields.io/hexpm/v/phoenix_three.svg)](https://hex.pm/packages/phoenix_three)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/phoenix_three/)
+
 A Mix task package for easily integrating Three.js into Phoenix projects. Automatically downloads Three.js files from CDN and configures your app.js imports.
 
 ## Features
@@ -18,7 +21,17 @@ Add `phoenix_three` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:phoenix_three, github: "benjaminjacobberg/phoenix_three", only: :dev, runtime: false}}
+    {:phoenix_three, "~> 0.1.0", only: :dev, runtime: false}
+  ]
+end
+```
+
+Alternatively, you can install from GitHub for the latest development version:
+
+```elixir
+def deps do
+  [
+    {:phoenix_three, github: "benjaminjacobberg/phoenix_three", only: :dev, runtime: false}
   ]
 end
 ```
@@ -156,6 +169,13 @@ The package downloads from [CDNJS](https://cdnjs.com/libraries/three.js). You ca
 **Version not found:**
 - Check available versions at [CDNJS Three.js](https://cdnjs.com/libraries/three.js)
 - Some very new versions might not be available on CDNJS yet
+
+## Links
+
+- [Hex Package](https://hex.pm/packages/phoenix_three)
+- [Documentation](https://hexdocs.pm/phoenix_three/)
+- [GitHub Repository](https://github.com/benjaminjacobberg/phoenix_three)
+- [Three.js Official Site](https://threejs.org)
 
 ## Contributing
 
