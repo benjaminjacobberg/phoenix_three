@@ -14,6 +14,7 @@ defmodule PhoenixThree.MixProject do
       package: package(),
       description: description(),
       name: "Phoenix Three",
+      source_url: @source_url,
       docs: docs()
     ]
   end
@@ -42,7 +43,7 @@ defmodule PhoenixThree.MixProject do
   defp package do
     [
       name: "phoenix_three",
-      files: ~w(lib .formatter.exs mix.exs README* LICENSE*),
+      files: ~w(lib .formatter.exs mix.exs README* LICENSE* CHANGELOG*),
       licenses: ["MIT"],
       links: %{
         "GitHub" => @source_url,
